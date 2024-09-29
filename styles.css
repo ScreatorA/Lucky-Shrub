@@ -1,0 +1,269 @@
+/* General Styling */
+html {
+  font-size: 20px; /* 1rem is now equal to 20px */
+  background-color: #f4d3a1;
+}
+
+body {
+  background-color: #f4d3a1;
+  font-family: "Markazi-Text", serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #35524a;
+}
+/* Header Styling */
+header {
+  background-color: #9dc183; /* Sage Green for the header background */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#company_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4.5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; /* Center the items*/
+  background-color: #35524a;
+  border-radius: 0.5rem;
+}
+
+nav ul {
+  display: flex; /* Make the ul a flex container */
+  flex-wrap: wrap;
+  justify-content: center; /* Distribute space around the items */
+  gap: 15rem;
+  padding: 1.5rem; /* Remove default padding */
+  border-style: none;
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove bullet points */
+  width: 100%; /* Make ul take full width for spacing */
+}
+
+nav a {
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f28c28; /* Sunset Orange for hover effect on navigation links */
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  background-color: rgba(
+    27,
+    252,
+    31,
+    0.183
+  ); /* Subtle green background for headings */
+  text-align: center;
+  padding: 0.5rem;
+  color: #35524a; /* Deep Teal text for headings */
+}
+
+h1 {
+  font-size: 3rem;
+  box-shadow: 6px 6px 8px #e07a5f; /* Terracotta shadow for main heading */
+}
+
+h2 {
+  font-size: 2rem;
+  box-shadow: 4px 4px 6px #e07a5f; /* Terracotta shadow for subheadings */
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.company_information article:hover {
+  background-color: #b5cda3;
+  margin-bottom: 3.5rem;
+  transition: margin-bottom 0.5s;
+}
+
+.company_information article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  box-shadow: 4px 4px 8px #e07a5f;
+  border-radius: 0.5rem;
+  background-color: rgba(144, 238, 144, 0.573);
+  min-height: 100%;
+}
+
+.company_information article:nth-child(even) p {
+  order: 1;
+}
+
+.company_information article:nth-child(even) img {
+  margin-bottom: 0.75rem;
+  order: 2;
+}
+
+.company_information article:nth-child(even) a {
+  order: 3;
+}
+
+article img {
+  width: 15rem;
+  height: 10rem;
+  align-self: center;
+  padding: 0.4rem;
+  border-radius: 1rem;
+  border: 1px solid #35524a;
+}
+
+article p {
+  align-self: center;
+  padding: 1rem;
+  margin-bottom: auto;
+}
+
+/* Promotional Banner Styling */
+
+/* Overlay for readability */
+.promo-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.146); /* Semi-transparent black overlay */
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("Lucky-Shrub-Images/Promotional_Banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Adjust height as needed */
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Banner Content */
+
+.promo-content::before {
+  content: "50% Discount at our Plant Nursery!";
+  font-size: 3rem;
+  color: #f28c28;
+  background-color: #35524a2f;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 6px #e07a5f;
+}
+
+.promo-content {
+  position: relative;
+  z-index: 3; /* Place content above overlay */
+  text-align: center;
+  color: #ffffff; /* White text for contrast */
+}
+
+.promo-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #f4d3a1; /* Warm Beige for heading */
+  border-radius: 0.5rem;
+}
+
+.promo-content p {
+  font-size: 1.25rem;
+  color: #ffffff; /* Supporting text in white for clarity */
+}
+/*------- Buttons ------*/
+.promo-button {
+  background-color: #e07a5f; /* Terracotta for the button */
+  color: #ffffff; /* White text */
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.5s ease;
+}
+
+.promo-button:hover {
+  background-color: #f28c28; /* Sunset Orange on hover */
+  transition: background-color 1s ease;
+}
+
+article a {
+  text-decoration: none;
+}
+
+#button_landscaping,
+#button_plant_nursery,
+#button_about_us {
+  background-color: #e07a5f; /* Terracotta for the button */
+  color: #ffffff; /* White text */
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.5s ease;
+  display: block;
+  margin: 0 0.25rem 0.25rem auto;
+}
+
+#button_landscaping:hover,
+#button_plant_nursery:hover,
+#button_about_us:hover {
+  background-color: #f28c28; /* Sunset Orange on hover */
+  transition: background-color 1s ease;
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #35524a; /* Deep Teal for footer background */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer div img {
+  width: 3rem;
+  height: auto;
+}
+
+footer p {
+  font-size: 0.75rem;
+  margin: 0px;
+  color: #ffffff; /* White text for copyright info */
+  text-align: right;
+}
